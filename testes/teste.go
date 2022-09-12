@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-type Endereco struct{
-	Rua string
+type Endereco struct {
+	Rua          string
 	NumeroDaCasa int
-	Bairro string
+	Bairro       string
 }
 
-func  main(){
+func main() {
 	cadastrarEndereco()
 
 }
@@ -21,6 +21,6 @@ func cadastrarEndereco() {
 	fmt.Println("Qual o nome do seu bairro?")
 	fmt.Scan(&e.Bairro)
 
-	fmt.Println("Rua:", e.Rua, ",", e.NumeroDaCasa, ". ", e.Bairro )
+	fmt.Println("Rua:", e.Rua, ",", e.NumeroDaCasa, ". ", e.Bairro)
 
 }
